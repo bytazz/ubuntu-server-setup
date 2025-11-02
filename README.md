@@ -31,7 +31,8 @@ sudo touch /etc/cloud/cloud-init.disabled
 
 ```bash
 sudo apt purge cloud-init -y
-sudo rm -rf /etc/cloud/ /var/lib/cloud/
+sudo rm -rf /etc/cloud/cloud.cfg.d /etc/cloud/clean.d /var/lib/cloud
+sudo apt autoremove -y
 ```
 
 ---
